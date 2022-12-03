@@ -8,11 +8,11 @@
 	scroll-behavior: smooth;
 }
 :root{
-	--bg-color: #3E7CB1;
-	--second-bg-color: #054A91;
+	--bg-color: #326352;
+	--second-bg-color: #428870;
 	--text-color: #fff;
-	--second-color: rgb(253, 236, 236);
-	--main-color: #ff4d05;
+	--second-color: #fff;
+	--main-color: #e0c73c;
 	--big-font: 5rem;
 	--h2-font: 3rem;
 	--p-font: 1.1rem;
@@ -182,9 +182,11 @@ header.sticky{
 	gap: 1.5rem;
 }
 .about-img img{
+	display: grid;
+	align-items: center;
 	max-width: 530px;
-	height: auto;
-	width: 100%;
+	height: 500px;
+	width: 500px;
 	border-radius: 8px;
 }
 .about-text h2{
@@ -252,7 +254,7 @@ header.sticky{
 .read{
 	display: inline-block;
 	padding: 8px 18px;
-	background: #054A91;
+	background: #326352;
 	color: var(--second-color);
 	font-size: 14px;
 	font-weight: 500;
@@ -269,21 +271,22 @@ header.sticky{
 	cursor: pointer;
 }
 
-.portfolio-content{
+.swiper {
 	display: grid;
 	grid-template-columns: repeat(auto-fit, minmax(350px, auto));
 	align-items: center;
 	gap: 2.5rem;
 	margin-top: 5rem;
 }
-.row{
+.swiper-slide{
 	position: relative;
 	overflow: hidden;
 	border-radius: 8px;
 	cursor: pointer;
 }
-.row img{
+.swiper-slide img{
 	width: 100%;
+	height: 80vh;
 	border-radius: 8px;
 	display: block;
 	transition: transform 0.5s;
@@ -291,7 +294,7 @@ header.sticky{
 .layer{
 	width: 100%;
 	height: 0;
-	background: linear-gradient(rgba(0,0,0,0.1), #054A91);
+	background: linear-gradient(rgba(0,0,0,0.1), #428870);
 	position: absolute;
 	border-radius: 8px;
 	left: 0;
@@ -327,10 +330,10 @@ header.sticky{
 	justify-content: center;
 	border-radius: 50%;
 }
-.row:hover img{
+.swiper-slide:hover img{
 	transform: scale(1.1);
 }
-.row:hover .layer{
+.swiper-slide:hover .layer{
 	height: 100%;
 }
 
@@ -398,8 +401,8 @@ header.sticky{
 form textarea{
 	width: 100%;
 	padding: 14px;
-	background: var(--bg-color);
-	color: var(--text-color);
+	background: var(--second-color);
+	color: solid black;
 	border: none;
 	outline: none;
 	font-size: 15px;
@@ -457,6 +460,12 @@ form textarea{
 	section{
 		padding: 110px 3% 60px;
 	}
+	.swiper-slide img{
+		width: 100%;
+		height: 70vh;
+		border-radius: 8px;
+		display: block;
+	}
 	.end{
 		padding: 15px 3%;
 	}
@@ -482,14 +491,26 @@ form textarea{
 	.about{
 		grid-template-columns: 1fr;
 	}
+	.home{
+		background-image: url(../img/background1.png);
+	}
+	.home-text h1{
+		font-size: 3.5rem;
+	}
 	.about-img{
 		text-align: center;
 		order: 2;
 	}
 	.about-img img{
 		width: 100%;
-		height: auto;
+		height: 50vh;
 		max-width: 100%;
+	}
+	.swiper-slide img{
+		width: 100%;
+		height: 40vh;
+		border-radius: 8px;
+		display: block;
 	}
 	.contact{
 		grid-template-columns: 1fr;
@@ -500,9 +521,7 @@ form textarea{
 	#menu-icon{
 		display: block;
 	}
-	.home{
-		background-image: url(../img/background1.png);
-	}
+	
 	.navlist{
 		position: absolute;
 		top: -1000px;
@@ -532,6 +551,9 @@ form textarea{
 	}
 	.home{
 		margin-top: 10%;
+	}
+	.home-text h1{
+		font-size: 3rem;
 	}
 	div .button{
 		margin-bottom: 10%;

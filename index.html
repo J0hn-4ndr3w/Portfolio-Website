@@ -4,7 +4,7 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>John-Andrew Portfolio Website</title>
-	<link rel="icon" type="image/x-icon" href="img/favicon.jpg">
+	<link rel="icon" type="image/x-icon" href="img/favicon.png">
 	<!---custom css link---->
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 
@@ -14,7 +14,11 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
-
+	<link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"
+    />
+		<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 <body>
 
@@ -64,12 +68,12 @@
 				1+ year experience in Video Editing, and a junior front-end web developer.
 			  <br> <br> Over the years, I've had the oportunity to work on
 				number of challenges and projects that have allowed 
-				me to grow and establish myseld within this competitive
+				me to grow and establish myself within this competitive
 				industry. I hope you all enjoy viewing my services as 
 				much as I enjoyed working on them. Go ahead and explore, 
 				don't hesitate to reach out if you'd like to learn more.
 			</p>
-			<a href="#contact" class="btn">More About</a>
+			<a href="#contact" class="btn">Get In Touch</a>
 		</div>
 	</section>
 
@@ -83,7 +87,7 @@
 		<div class="services-content">
 			<div class="box">
 				<div class="s-icons">
-					<i class='bx bx-mobile-alt' ></i>
+					<i class='bx bx-mobile-alt'></i>
 				</div>
 				<h3>Graphic Designer</h3>
 				<p>I create visual communications such as adverts, 
@@ -126,64 +130,45 @@
 	<section class="portfolio" id="portfolio">
 		<div class="main-text">
 			<p>Portfolio</p>
-			<h2><span>Latest</span> Project</h2>
+			<h2><span>Sample</span> Project</h2>
 		</div>
 
-		<div class="portfolio-content">
-			<div class="row">
-				<img src="img/portfolio1.png">
-				<div class="layer">
-					<h5>Facebook Imitation Design</h5>
-					<p>Check out my imitation design for facebook website.</p>
-					<a href="https://boisterous-moonbeam-471d97.netlify.app/"><i class='bx bx-link-external' ></i></a>
+		<div class="swiper mySwiper">
+			<div class="swiper-wrapper">
+	
+				<div class="swiper-slide">
+					<img src="img/portfolio1.png">
+					<div class="layer">
+						<h5>This is my Sample Website</h5>
+						<p>Check out my sample websites in the my google drive link.</p>
+						<a href="https://drive.google.com/drive/folders/1cxrx_zEXRscg-E_zzNns3ka1643mBgtO?usp=sharing" target="_blank">
+							<i class='bx bx-link-external'></i>
+						</a>
+					</div>
+				</div>
+				<div class="swiper-slide">
+					<img src="img/portfolio2.png">
+					<div class="layer">
+						<h5>This is my Sample Designs</h5>
+						<p>Check out my graphic designs that I created here in my google drive link.</p>
+						<a href="https://drive.google.com/drive/folders/1Wjf1vtepLuzmJmsRwPM9q0Y4EkyHgPUy?usp=sharing" target="_blank">
+							<i class='bx bx-link-external'></i>
+						</a>
+					</div>
+				</div>
+	
+				<div class="swiper-slide">
+					<img src="img/portfolio3.png">
+					<div class="layer">
+						<h5>Sample Video Edits</h5>
+						<p>Check out my sample video edits here in my google drive link.</p>
+						<a href="https://drive.google.com/drive/folders/1pmwml9LalbDw5gF6UdR9P5fZPQAe0VZ0?usp=sharing" target="_blank"><i class='bx bx-link-external' ></i></a>
+					</div>
 				</div>
 			</div>
-
-			<div class="row">
-				<img src="img/portfolio2.png">
-				<div class="layer">
-					<h5>Visual Design</h5>
-					<p>Check out 10 Best Design's updates for the top web design & development companies.</p>
-					<a href="#"><i class='bx bx-link-external' ></i></a>
-				</div>
-			</div>
-
-			<div class="row">
-				<img src="img/portfolio3.png">
-				<div class="layer">
-					<h5>Visual Design</h5>
-					<p>Check out 10 Best Design's updates for the top web design & development companies.</p>
-					<a href="#"><i class='bx bx-link-external' ></i></a>
-				</div>
-			</div>
-
-			<div class="row">
-				<img src="img/portfolio4.png">
-				<div class="layer">
-					<h5>Visual Design</h5>
-					<p>Check out 10 Best Design's updates for the top web design & development companies.</p>
-					<a href="#"><i class='bx bx-link-external' ></i></a>
-				</div>
-			</div>
-
-			<div class="row">
-				<img src="img/portfolio5.png">
-				<div class="layer">
-					<h5>Visual Design</h5>
-					<p>Check out 10 Best Design's updates for the top web design & development companies.</p>
-					<a href="#"><i class='bx bx-link-external' ></i></a>
-				</div>
-			</div>
-
-			<div class="row">
-				<img src="img/portfolio6.png">
-				<div class="layer">
-					<h5>Visual Design</h5>
-					<p>Check out 10 Best Design's updates for the top web design & development companies.</p>
-					<a href="#"><i class='bx bx-link-external' ></i></a>
-				</div>
-			</div>
-
+			<div class="swiper-button-next"></div>
+      <div class="swiper-button-prev"></div>
+      <div class="swiper-pagination"></div>
 		</div>
 	</section>
 
@@ -192,7 +177,7 @@
 		<div class="contact-text">
 			<h2>Contact <span>Me!</span></h2>
 			<h4>If You Have Any Project In Your Mind.</h4>
-			<p>I'm a GENERAL ASSISTANT - competent and skilled freelancer
+			<p>I'm a FREELANCER - competent and skilled employee
 				ready to work with anyone in the world.
 			</p>
 			<div class="list">
@@ -201,10 +186,10 @@
 			</div>
 
 			<div class="contact-icons">
-				<a href="https://www.facebook.com/andrew.registos.33/"><i class='bx bxl-facebook' ></i></a>
-				<a href="https://twitter.com/Bluemambz"><i class='bx bxl-twitter' ></i></a>
-				<a href="https://www.instagram.com/johnandrewregistos/"><i class='bx bxl-instagram-alt' ></i></a>
-				<a href="https://www.linkedin.com/in/registosjohnandrew/"><i class='bx bxl-linkedin' ></i></a>
+				<a href="https://www.facebook.com/andrew.registos.33/" target="_blank"><i class='bx bxl-facebook' ></i></a>
+				<a href="https://twitter.com/Bluemambz" target="_blank"><i class='bx bxl-twitter' ></i></a>
+				<a href="https://www.instagram.com/johnandrewregistos/" target="_blank"><i class='bx bxl-instagram-alt' ></i></a>
+				<a href="https://www.linkedin.com/in/registosjohnandrew/" target="_blank"><i class='bx bxl-linkedin' ></i></a>
 			</div>
 		</div>
 
@@ -233,6 +218,22 @@
 
 	<!---custom js link--->
 	<script type="text/javascript" src="js/script.js"></script>
-
+	<script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+	<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+	
+	<script>
+		var swiper = new Swiper(".mySwiper", {
+			cssMode: true,
+			navigation: {
+				nextEl: ".swiper-button-next",
+				prevEl: ".swiper-button-prev",
+			},
+			pagination: {
+				el: ".swiper-pagination",
+			},
+			mousewheel: true,
+			keyboard: true,
+		});
+	</script>
 </body>
 </html>
